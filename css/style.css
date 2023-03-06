@@ -1,4 +1,57 @@
 /* Homepage */
+/* nav dropdown */
+
+.dropdown-menu {
+  display: block;
+  position: relative;
+  left:0;
+  width: fit-content;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #F6EEE5;
+position: absolute;
+width: fit-content;
+
+}
+
+.dropdown-menu li {
+    display: block;
+    position: absolute;
+    width: fit-content;
+
+
+}
+.dropdown-item {
+  display: block;
+  position: relative;  
+  background-color: transparent; 
+  width: fit-content;
+
+}
+
+.dropdown-item:hover {
+  background-image: url(/images/ltpk_rectangle.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: drop-shadow(0px 3.30371px 3.30371px #F2D8CE);
+    position: relative;  
+    width: fit-content;
+    white-space: nowrap;
+    
+}
+
+
+ul2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li2 {
+  display: inline-block;
+  padding: 10px;
+}
 
 /* Header */
 Body {
@@ -56,11 +109,11 @@ nav a{
 
 nav a:hover {
     background-image: url(/images/ltpk_rectangle.png);
-    background-size: 225px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    padding: 15px;
     width: fit-content;
     filter: drop-shadow(0px 3.30371px 3.30371px #F2D8CE);
+    padding: 0px;
 
   }
 
@@ -670,7 +723,6 @@ transform: rotate(2.5deg);
       background-image: url("../images/BG-Hmong.png");
       background-repeat: repeat;
       width: 100%;
-      margin-left: -10px;
       height:5200px; 
       margin-top: 0px;
       overflow: hidden;
@@ -681,7 +733,7 @@ transform: rotate(2.5deg);
     width: 424px;
     color: rgba(34,46,74,1);
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 169px;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
     font-family: Cheddar Jack;
@@ -696,7 +748,7 @@ transform: rotate(2.5deg);
   width: 469px;
   height: 102px;
   left: 122.6px;
-  top: 70px;
+  top: 150px;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
   transform: rotate(2.64deg);
   }
@@ -737,19 +789,19 @@ transform: rotate(2.5deg);
     width: 904px;
     height: 447px;
     margin-left: 200px;
-    margin-top: 200px;
+    margin-top: 300px;
     filter: drop-shadow(4.00935px 4.00935px 4.00935px rgba(0, 0, 0, 0.5));
   }
   
   .recap {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 300px;
   }
   
   .recap2 {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 750px;
   }
   .v32_79 {
