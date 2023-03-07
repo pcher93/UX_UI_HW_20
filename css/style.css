@@ -1,130 +1,122 @@
 /* Homepage */
+@import url(//db.onlinewebfonts.com/c/862c83306ca682ad1bbc1e66410f108e?family=Cheddar+Jack);
+
+@font-face {font-family: "Cheddar Jack"; src: url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.eot"); src: url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.woff") format("woff"), url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/862c83306ca682ad1bbc1e66410f108e.svg#Cheddar Jack") format("svg"); }
+/* Header */
 /* nav dropdown */
 
 .dropdown-menu {
   display: block;
-  position: relative;
+  position: absolute;
   left:0;
-  width: fit-content;
+  top: 0px;
+  padding: 10px 10px;
+
 }
-.dropdown:hover .dropdown-menu {
+
+.dropdown-menu:hover  {
   display: block;
-  background-color: #F6EEE5;
-position: absolute;
-width: fit-content;
-
-}
-
-.dropdown-menu li {
-    display: block;
-    position: absolute;
-    width: fit-content;
+  position: absolute;
+background-color: #F6EEE5;
+padding: 10px 10px;
 
 
 }
+
 .dropdown-item {
   display: block;
   position: relative;  
-  background-color: transparent; 
-  width: fit-content;
+  padding: 10px 10px;
+  text-decoration: none;
 
 }
 
 .dropdown-item:hover {
-  background-image: url(/images/ltpk_rectangle.png);
-    background-repeat: no-repeat;
-    background-color: transparent;
-    filter: drop-shadow(0px 3.30371px 3.30371px #F2D8CE);
+  background-color: #F2B872;
     position: relative;  
-    width: fit-content;
-    white-space: nowrap;
+    padding: 10px 10px;
+    color: #222E4A;
     
 }
 
 
-ul2 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li2 {
-  display: inline-block;
-  padding: 10px;
-}
-
 /* Header */
 Body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Quicksand', sans-serif;
-    font-style: medium;
-    font-weight: 500;
-    color: #222E4A; 
-    padding-top: 60px;
-    width: 100vw;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  color: #222E4A; 
+  padding-top: 60px;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .container{
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .fixed-header {
-    background-color: #F6EEE5;
-    border-bottom-style: solid;
-    border-bottom-color: #CDA5AD;
-    position: fixed;      
-    color: #222E4A; 
-    width: 100%;
-    height: 126px;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    text-align: right;
+  background-color: #F6EEE5;
+  border-bottom-style: solid;
+  border-bottom-color: #CDA5AD;
+  position: fixed;      
+  color: #222E4A; 
+  width: 100%;
+  height: 126px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  text-align: right;
 }
 
 .container img {
-    position: absolute;
-    width: 126px;
-    height: 73px;
-    top: 50px;
-    left: 120px;
-    bottom: 5px;
-  }
+  position: absolute;
+  width: 126px;
+  height: 73px;
+  top: 50px;
+  left: 120px;
+  bottom: 5px;
+}
 
-
-
-nav a{
+  nav a{
     position: relative;
     color: #222E4A;
     text-decoration: none;
     display: inline-block;
-    padding: 75px 45px;
+    padding:72px 45px;
     font-size: 24px;
+    line-height: 30px;
 
-   
 }
 
-nav a:hover {
-    background-image: url(/images/ltpk_rectangle.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: fit-content;
-    filter: drop-shadow(0px 3.30371px 3.30371px #F2D8CE);
-    padding: 0px;
+nav a:hover{
+  position: relative;
+  background-color: #F2D8CE;
+  padding:20px 45px;
+  text-decoration: underline;
 
-  }
+
+}
 
 nav a:active {
-    background-image: url(/images/dk_pk_rectangle.png);
-    background-size: 225px;
-    background-repeat: no-repeat;
-    padding: 15px;
-    filter: drop-shadow(0px 3.30371px 3.30371px #CDA5AD);
+  position: relative;
+  background-color: #D29431;
+  padding:20px 45px;
+  text-decoration: underline;
 
   }
+
+
+
+  [aria-pressed="true"] {
+          background-color: #CDA5AD;
+          padding:20px 45px;
+  text-decoration: underline;
+
+    }
 
 /* hero section */
 .heroBackground {
@@ -197,7 +189,7 @@ nav a:active {
     width: 604.58px;
     height: 621px;
     left: 1002px;
-    top: 131px;
+    top: 100px;
     
     filter: drop-shadow(0px 3.30371px 3.30371px rgba(0, 0, 0, 0.25));
     }
@@ -223,23 +215,23 @@ nav a:active {
 }
 
 .sectionHeading {
-    position: absolute;
-    width: 276px;
-    height: 110px;
-    left: 225px;
-    top: -70px;
+  position: absolute;
+  width: 276px;
+  height: 110px;
+  left: 225px;
+  top: 10px;
 
-    font-family: 'Cheddar Jack';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 136px;
-    line-height: 136px;
-    display: flex;
-    align-items: center;
+  font-family: "Cheddar Jack",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 136px;
+  line-height: 136px;
+  display: flex;
+  align-items: center;
 
-    color: #222E4A;
+  color: #222E4A;
 
-    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -283,24 +275,25 @@ nav a:active {
 
 
 .card-title {
-    width: 407.5px;
-    height: 75px;
-    font-family: 'Caveat Brush', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 100%;
-    margin-bottom: 0px;
+  width: 100%;
+  height: 75px;
+  font-family: 'Caveat Brush', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 0px;
     color: #222E4A;
 
-    /* Inside auto layout */
+  /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    padding-top: 100px;
-    padding-left: 50px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  padding-top: 100px;
+  padding-left: 50px;
+
 
 }
 
@@ -310,6 +303,7 @@ nav a:active {
     text-align: left;
     padding-left: 50px;
     margin-bottom: 24px;
+    padding-top: 70px;
 
 
     font-family: 'Quicksand';
@@ -341,6 +335,7 @@ nav a:active {
     flex: none;
     order: 2;
     flex-grow: 0;
+    margin-top: 100px;
 
 }
 
@@ -396,10 +391,10 @@ nav a:active {
     display: flex;
     background-image: url(../images/BG-Hmong.png);
     background-repeat: repeat;
-    width: 100%;
+    width: 1728px;
     margin-left: -10px;
     height:2200px; 
-    top: -90px;
+    top: -50px;
     overflow: hidden;
 
 }
@@ -410,7 +405,7 @@ nav a:active {
     width: 100px;
     height: 102px;
     left: 300px;
-    top: 80px;
+    top: 100px;
     justify-content: center;
     text-align: center;
     
@@ -419,22 +414,22 @@ nav a:active {
 }
 
 .sectionLabel {
-    position: absolute;
-    width: 306px;
-    height: 102px;
-    left: -100px;
-    top: -140px;
-    
+  position: absolute;
+  width: 306px;
+  height: 102px;
+  left: -100px;
+  top: -25px;
+  
 
-    font-family: 'Cheddar Jack';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 136px;
-    line-height: 136px;
+  font-family: "Cheddar Jack",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 136px;
+  line-height: 136px;
 
-    color: #222E4A;
+  color: #222E4A;
 
-    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 .rightMe img{
@@ -486,7 +481,7 @@ nav a:active {
     width: 100px;
     height: 102px;
     left: 300px;
-    top: 850px;
+    top: 800px;
     justify-content: center;
     text-align: center;
     
@@ -495,24 +490,24 @@ nav a:active {
 }
 
 .sectionLabel2 {
-    position: absolute;
-    width: 306px;
-    height: 102px;
-    left: -100px;
-    top: -130px;
-    
+  position: absolute;
+  width: 306px;
+  height: 102px;
+  left: -150px;
+  top: -25px;
+  width: 424px;
 
-    font-family: 'Cheddar Jack';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 136px;
-    line-height: 136px;
+  color: rgba(34,46,74,1);
+  font-family: "Cheddar Jack",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 136px;
+  line-height: 136px;
 
-    color: #222E4A;
+  color: #222E4A;
 
-    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
-
 /* tech skills */
 .pkBox {
     position: absolute;
@@ -533,7 +528,7 @@ nav a:active {
     width: 323px;
     height: 76px;
     left: 290px;
-    top: 960px;
+    top: 1000px;
     
     font-family: 'Caveat Brush';
     font-style: normal;
@@ -582,7 +577,7 @@ li {
        
         }
 li p {
-        top: -25px;
+        top: -10px;
         left: -170px;
         }
 
@@ -605,7 +600,7 @@ li p {
             width: 323px;
             height: 76px;
             left: 290px;
-            top: 1360px;
+            top: 1400px;
             
             font-family: 'Caveat Brush';
             font-style: normal;
@@ -648,7 +643,7 @@ li p {
                
                 }
 .Programs p {
-                top: 415px;
+                top: 440px;
                 left: 80px;
                 text-align: left;
                 line-height:60px;
@@ -673,7 +668,7 @@ transform: rotate(2.5deg);
      position: absolute;
     width: 323px;
      height: 76px;
-     top: 1360px;
+     top: 1400px;
     font-family: 'Caveat Brush';
      font-style: normal;
       font-weight: 400;
@@ -696,7 +691,7 @@ transform: rotate(2.5deg);
        
  .softSk {
     position: relative;
-    top: 1525px;
+    top: 1550px;
     left: 80px;
     text-align: left;
     line-height:25px;
@@ -733,11 +728,11 @@ transform: rotate(2.5deg);
     width: 424px;
     color: rgba(34,46,74,1);
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 169px;
     text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
-    font-family: Cheddar Jack;
-    font-weight: Regular;
+    font-family: "Cheddar Jack",sans-serif;
+    font-style: normal;
     font-size: 136px;
     opacity: 1;
     text-align: left;
@@ -1052,7 +1047,7 @@ transform: rotate(2.5deg);
     position: absolute;
     display: flex;
   width: 1341px;
-  height: 550px;
+  height: 640px;
   left: 219px;
   top: 2630px;
   filter: drop-shadow(2.83787px 2.83787px 2.83787px rgba(0, 0, 0, 0.5));
@@ -1080,7 +1075,7 @@ transform: rotate(2.5deg);
     background-size: 373px ;
     opacity: 1;
     position: absolute;
-    top: 3191px;
+    top: 3300px;
     left: 119px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -1093,7 +1088,7 @@ transform: rotate(2.5deg);
     background-position-y: center;
     opacity: 1;
     position: absolute;
-    top: 3191px;
+    top: 3300px;
     left: 511px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -1106,7 +1101,7 @@ transform: rotate(2.5deg);
     background-position-y: center;
     opacity: 1;
     position: absolute;
-    top: 3191px;
+    top: 3300px;
     left: 872px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -1119,7 +1114,7 @@ transform: rotate(2.5deg);
     background-position-y: center;
     opacity: 1;
     position: absolute;
-    top: 3191px;
+    top: 3300px;
     left: 1235px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -1131,7 +1126,7 @@ transform: rotate(2.5deg);
     width: 469px;
     height: 68px;
     left: 120px;
-    top: 3400px;
+    top: 3450px;
   transform: rotate(2.64deg);
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
   }
@@ -1140,7 +1135,7 @@ transform: rotate(2.5deg);
     width: 213px;
     color: rgba(34,46,74,1);
     position: absolute;
-    top: 3497px;
+    top: 3550px;
     left: 248px;
     font-family: Caveat Brush;
     font-weight: Regular;
@@ -1159,7 +1154,7 @@ transform: rotate(2.5deg);
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 3590px;
+    top: 3640px;
     left: 246px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -1182,7 +1177,7 @@ transform: rotate(2.5deg);
   .ivryBox9 img{
     position: absolute;
     width: 662px;
-    height: 260px;
+    height: 300px;
     left: 850px;
     top: 3630px;
     
@@ -1230,7 +1225,7 @@ transform: rotate(2.5deg);
   .ivryBox10 img{
     position: absolute;
     width: 670px;
-    height: 393px;
+    height: 450px;
     left: 220px;
     top: 4300px;
     filter: drop-shadow(2.83787px 2.83787px 2.83787px rgba(0, 0, 0, 0.5));
@@ -1333,7 +1328,7 @@ transform: rotate(2.5deg);
     width: 764px;
     color: rgba(34,46,74,1);
     position: absolute;
-    top: 4835px;
+    top: 4850px;
     left: 270px;
     font-family: Quicksand;
     font-weight: Medium;
@@ -1547,7 +1542,7 @@ top: 550px;
 
 footer {
     position: relative;
-    width: 100%;
+    width: 1728px;
     height: 385px;   
     background: #CDA5AD;
     text-align: center; 
